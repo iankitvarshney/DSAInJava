@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Main {
 
-	public static void printNFibonacciNumbers(int n) {
+	public static void printNFibonacciNumbers1(int n) {
 
 		if(n <= 0) {
 			return;
@@ -22,13 +22,31 @@ public class Main {
 
 	}
 
+	public static void printNFibonacciNumbers2(int n) {
+
+		if(n <= 0) {
+			return;
+		}
+
+		int a = 0; // current fibonacci number
+		int b = 1; // next fibonacci number
+
+		for(int i = 0; i < n; i++) {
+			System.out.println(a);
+
+			int c = a + b; // second next fibonacci number
+			a = b;
+			b = c;
+		}
+	}
+
 	public static void main(String[] args) {
 
 		Scanner scn = new Scanner(System.in);
 
 		int n = scn.nextInt();
 
-		printNFibonacciNumbers(n);
+		printNFibonacciNumbers2(n);
 	}
 }
 

@@ -14,3 +14,8 @@
 - Is a number prime
 - Print all prime numbers till N
 - Print all fibonacci numbers till N
+- Count digits in a number
+- Digits of a number
+- Print reverse of a number
+- Inverse of a number
+- Rotate a number
