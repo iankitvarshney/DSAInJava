@@ -44,6 +44,19 @@ public class Main {
 
 /*
 
+In Mathematics there is a division method.
+
+In this, we try to divide the bigger number by smaller number.
+Then the remainder which we get becomes the divisor, 
+and the divisor from the previous step becomes the dividend.
+In this way we keep on dividing till we get 0 as remainder.
+The divisor which gives us remainder 0 will be the gcd.
+
+In the first step, if we divided smaller number by bigger number, 
+then the numbers will get swapped in the second iteration.
+So, not to worry about bigger and smaller numbers.
+
+
 There is a formula.
 gcd * lcm = num1 * num2
 

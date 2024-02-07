@@ -2,6 +2,7 @@ import java.util.*;
 
 public class Main {
 
+	// brute force approach
 	public static boolean isPrime1(int num) {
 
 		if(num <= 1) {
@@ -17,6 +18,7 @@ public class Main {
 		return true;
 	}
 
+	// better approach
 	public static boolean isPrime2(int num) {
 
 		if(num <= 1) {
@@ -32,6 +34,7 @@ public class Main {
 		return true;
 	}
 
+	// optimized approach
 	public static boolean isPrime3(int num) {
 
 		if(num <= 1) {
@@ -67,6 +70,14 @@ public class Main {
 }
 
 /*
+
+NOTE:
+If a program is doing around 10^9 operations, 
+then it approximately runs in 1 second.
+
+10^9 Operations => 1 Second
+
+
 Factors of 24
 
 1 * 24    24 * 1
@@ -84,7 +95,7 @@ Factors of 36
 
 Suppose, we have factors of n as p and q.
 If p * q = n
- 
+
 Case I: p and q can be equal to sqrt(n)
 
 Case II: p < sqrt(n) and q > sqrt(n)
@@ -96,7 +107,7 @@ One factor should be smaller than sqrt(n),
 and other factor should be larger than sqrt(n), if they are not equal.
 
 So, if we got no factor of n smaller than sqrt(n), 
-then there will also be no factor of n greater than sqrt(n)
+then there will also be no factor of n greater than sqrt(n).
 
 Suppose, if there is a factor of n greater than sqrt(n), 
 then it should also have its pair smaller than sqrt(n).
@@ -108,16 +119,16 @@ Otherwise n is a prime number.
 
 Time Complexity: O(sqrt(n))
 
-Factors of 25 
+Factors of 25
 
-1 * 25 
+1 * 25
 5 * 5
 25 * 1
 
-Factors of 49 
+Factors of 49
 
-1 * 49 
-7 * 7 
+1 * 49
+7 * 7
 49 * 1
 
 One more optimization.

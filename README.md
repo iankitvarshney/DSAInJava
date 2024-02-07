@@ -46,3 +46,19 @@
 - Pattern 18
 - Pattern 19
 - Pattern 20
+
+### Function and Arrays
+
+- Notes
+- Digits Frequency
+- Decimal to any base
+- Any base to decimal
+- Any base to any base
+- Any base addition
+- Any base subtraction
+- Any base multiplication
+- Span of an array
+- Find element in an array
+- Bar chart
+- Sum of two arrays
+- Difference of two arrays

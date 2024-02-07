@@ -1,0 +1,261 @@
+Introduction to Functions:
+
+Benefits of Functions:
+
+1. Modularity
+2. Maintainability
+
+Code becomes modular.
+Code gets divided in smaller modules.
+Becomes easy for us to write code.
+
+If we violate DRY (Don't Repeat Yourself) principle, 
+we will have to make code changes or code optimizations at various places.
+
+
+
+
+Introduction to Number System:
+
+
+Decimal Number System:
+
+Base : 10
+
+Digits : 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+
+
+Counting:
+
+0 1 2 3 4 ... 9
+10 11 12 ... 19
+20  21 ... 29
+...
+90 ... 99
+100 ... 999
+1000
+
+
+Place Values:
+
+[9563](10) = 9 * 10^3 + 5 * 10^2 + 6 * 10^1 + 3 * 10^0
+
+This means that in 9563, 
+1000 came 9 times, 
+100 came 5 times, 
+10 came 6 times, 
+And 1 came 3 times.
+
+
+[_ _ _ _](10) = 10 * 10 * 10 * 10 = 10^4
+
+Total 10^4 different numbers can be possible.
+
+Here we are not talking from 1000 to 9999.
+We are talking from 0000 t0 9999.
+
+Smallest 4-digit decimal number: 0000
+Largest 4-digit decimal number: 9999
+
+
+
+
+Binary Number System:
+
+Base : 2
+
+Bits :  0, 1
+
+
+Counting:
+
+0 1
+10 11
+100 101 110 111
+1000
+...
+
+
+Place Values:
+
+[110111](2)
+
+ 1    1    0    1    1    1
+2^5  2^4  2^3  2^2  2^1  2^0
+
+= 1 * 2^5 + 1 * 2^4 + 0 * 2^3 + 1 * 2^2 + 1 * 2^1 + 1 * 2^0
+
+
+[_ _ _ _](2) = 2 * 2 * 2 * 2 = 2^4
+
+Total 2^4 different numbers can be possible.
+
+Smallest 4-digit binary number: 0000
+Largest 4-digit binary number: 1111
+
+
+
+
+Octal Number System:
+
+Base: 8
+
+Octates: 0, 1, 2, 3, 4, 5, 6, 7
+
+
+Counting:
+
+0 1 2 3 4 5 6 7
+10 ... 17
+20 ... 27
+30 ... 37
+...
+70 ... 77
+100 ... 777
+1000
+...
+
+
+Place Values:
+
+[563](8)
+
+5      6    3
+8^2   8^1  8^0
+
+= 5 * 8^2 + 6 * 8^1 + 3 * 8^0
+
+
+[ _ _ _ _ ](8) = 8 * 8 * 8 * 8 = 8^4
+
+Total 8^4 different numbers can be possible.
+
+Smallest 4-digit octal number: 0000
+Largest 4-digit octal number: 7777
+
+
+
+
+Number Conversions:
+
+
+Decimal Number to Binary Number Conversion:
+
+
+Convert decimal number 57 to binary number.
+
+What we do ?
+The number system in which we have to convert, 
+we divide our original number by new number system's base.
+
+57 / 2  q : 28  r : 1
+28 / 2  q : 14  r : 0
+14 / 2  q : 7   r : 0
+7 / 2   q : 3   r : 1
+3 / 2   q : 1   r : 1
+1 / 2   q : 0   r : 1
+
+Now, we have to rearrange the remainders in reverse order.
+It means multiplying remainders with increasing powers of 10 and add them up.
+
+= 1 * 10^0 + 0 * 10^1 + 0 * 10^2 + 1 * 10^3 + 1 * 10^4 + 1 * 10^5
+= 111001
+
+[57](10)  =  [111001](2)
+
+
+This is what we have to do.
+How do we have to do this and why do we have to do this,
+we will discuss it later.
+
+
+
+
+Binary Number to Decimal Number Conversion:
+
+
+Convert binary number 111001 to decimal number.
+[111001](2) = [ ? ](10)
+
+In this case, we repeatedly divide the given number by 10.
+
+111001 / 10  q : 11100  r : 1
+11100 / 10   q : 1110   r : 0
+1110 / 10    q : 111    r : 0
+111 / 10     q : 11     r : 1
+11 / 10      q : 1      r : 1
+1 / 10       q : 0      r : 1
+
+Now, we have to multiply remainders with increasing powers of 2 and add them up.
+
+= 1 * 2^0 + 0 * 2^1 + 0 * 2^2 + 1 * 2^3 + 1 * 2^4 + 1 * 2^5
+= 1 + 0 + 0 + 8 + 16 + 32
+= 57
+
+
+
+
+Decimal Number to Octal Number Conversion:
+
+
+Convert decimal number 694 to octal number.
+[694](10) = [ ? ](8)
+
+In this case, we repeatedly divide the given number by 8.
+
+694 / 8  q : 86  r : 6
+86 / 8   q : 10  r : 6
+10 / 8   q : 1   r : 2
+1 / 8    q : 0   r : 1
+
+Now, we have to multiply remainders with increasing powers of 10 and add them up.
+
+= 6 * 10^0 + 6 * 10^1 + 2 * 10^2 + 1 * 10^3
+= 6 + 60 + 200 + 1000
+= 1266
+
+
+
+
+Octal Number to Decimal Number Conversion:
+
+
+Convert octal number 1266 to decimal number.
+[1266](8) = [ ? ](10)
+
+In this case, we repeatedly divide the given number by 10.
+
+1266 / 10  q : 126  r : 6
+126 / 10   q : 12   r : 6
+12 / 10    q : 1    r : 2
+1 / 10     q : 0    r : 1
+
+Now, we have to multiply remainders with increasing powers of 8 and add them up.
+
+= 6 * 8^0 + 6 * 8^1 + 2 * 8^2 + 1 * 8^3
+= 6 + 48 + 128 +  512
+= 694
+
+
+
+
+Introduction to Arrays:
+
+int[] arr;
+This is the declaration of an array.
+
+arr = new int[5];
+This is allocation of space for an array.
+
+
+NOTE:
+When we assign one array to another array, 
+then that is a shallow copy of the array.
+If we make changes in one array, 
+the changes will also show in another array.
+
+When we pass an array to a function, 
+then again, a shallow copy of array is passed to the function.
+
+Shallow copy of array means the reference of the array is passed.
+
