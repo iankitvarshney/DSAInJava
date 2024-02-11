@@ -62,3 +62,11 @@
 - Bar chart
 - Sum of two arrays
 - Difference of two arrays
+- Reverse an array
+- Rotate an array
+- Inverse of an array
+- Subarrays of an array
+- Subsets of an array
+- Binary Search Algorithm
+- Ceil and Floor
+- First and last index
