@@ -70,3 +70,17 @@
 - Binary Search Algorithm
 - Ceil and Floor
 - First and last index
+
+### 2D Arrays
+
+- Notes
+- 2D Arrays demo
+- Matrix multiplication
+- Wave traversal
+- Spiral traversal
+- Exit point of a matrix
+- Rotate by 90 degree
+- Shell rotate
+- Diagonal traversal
+- Saddle point
+- Search in a sorted 2D array

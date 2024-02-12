@@ -1,0 +1,19 @@
+Introduction to 2-D Arrays:
+
+
+Declaration of a 2-D array:
+int[][] arr;
+
+Memory allocation for a 2-D array:
+arr = new int[3][4];
+
+
+Abstract View:
+There is a matrix, which contains 3 rows and 4 columns.
+
+
+Memory View:
+In Stack, an array reference (arr) is created.
+It contains the address of a 3-sized array.
+Now, those 3 entries of array further contains addresses of three different 4-sized arrays.
+
